@@ -1,0 +1,18 @@
+@EterationCaseStudy.Api_HostAddress = http://localhost:5091
+
+GET {{EterationCaseStudy.Api_HostAddress}}/api/products?page=1&pageSize=10&nameContains=pro&minPrice=10&maxPrice=500&sortBy=price&sortDir=desc
+Accept: application/json
+
+
+GET {{EterationCaseStudy.Api_HostAddress}}/api/products/1
+Accept: application/json
+
+POST {{EterationCaseStudy.Api_HostAddress}}/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "email": "user1@demo.local",
+  "password": "User123!",
+  "username": "user1",
+  "role": "User"
+}

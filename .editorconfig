@@ -1,0 +1,15 @@
+root = true
+
+[*.cs]
+# Default: surface StyleCop diagnostics as warnings unless overridden
+dotnet_analyzer_diagnostic.category-StyleCop.severity = warning
+
+# Common relaxations to fit current codebase
+dotnet_diagnostic.SA1633.severity = none   # File header required
+dotnet_diagnostic.SA1600.severity = none   # XML docs required
+dotnet_diagnostic.SA1309.severity = none   # Field names must not begin with _
+
+# Keep some useful rules active
+dotnet_diagnostic.SA1200.severity = warning  # Using directives placement
+dotnet_diagnostic.SA1516.severity = suggestion  # Elements separated by blank line
+
